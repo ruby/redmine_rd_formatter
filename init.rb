@@ -1,5 +1,7 @@
 # Redmine RD formatter
 require 'redmine'
+require 'redmine_rd_formatter/wiki_formatter'
+require 'redmine_rd_formatter/helper'
 
 Rails.logger.info 'Starting RD formatter for RedMine'
 
