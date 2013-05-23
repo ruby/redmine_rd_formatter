@@ -3,7 +3,7 @@ module RedmineRDFormatter
     unloadable
 
     def wikitoolbar_for(field_id)
-      file = Engines::RailsExtensions::AssetHelpers.plugin_asset_path('redmine_rd_formatter', 'help', 'rd_syntax.html')
+      file = File.join(Redmine::Plugin.public_directory, 'redmine_rd_formatter', 'help', 'rd_syntax.html')
       help_link = l(:setting_text_formatting) + ': ' +
       link_to(l(:label_help), file,
               :onclick => "window.open(\"#{file}\", \"\", \"resizable=yes, location=no, width=300, height=640, menubar=no, status=no, scrollbars=yes\"); return false;")
