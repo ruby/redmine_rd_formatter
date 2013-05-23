@@ -4,7 +4,7 @@ require 'rd/version'
 require 'rd/rd2html-lib'
 
 module RedmineRDFormatter
-  class WikiFormatter
+  class Formatter
     FILTERS = [
     ].freeze
 
@@ -17,6 +17,7 @@ module RedmineRDFormatter
     def initialize(text)
       @text = text
     end
+
     def to_html(&block)
       return "" unless /\S/m =~ @text
 
