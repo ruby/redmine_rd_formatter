@@ -10,7 +10,7 @@ module Redmine
         FILTERS = [
         ].freeze
 
-        class RestrictedHTMLVisitor < RD::RD2HTMLVisitor
+        class RestrictedHTMLVisitor < ::RD::RD2HTMLVisitor
           def apply_to_DocumentElement(element, content)
             content.join
           end
@@ -32,8 +32,8 @@ module Redmine
             end
           end
 
-          include_path = [RD::RDTree.tmp_dir]
-          tree = RD::RDTree.new(src, include_path, nil)
+          include_path = [::RD::RDTree.tmp_dir]
+          tree = ::RD::RDTree.new(src, include_path, nil)
           FILTERS.each do |part_name, filter|
             tree.filter[part_name] = filter
           end
