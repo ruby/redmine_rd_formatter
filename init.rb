@@ -1,7 +1,9 @@
 # Redmine RD formatter
 require 'redmine'
+require 'wiki_formatting/rd/formatter'
+require 'wiki_formatting/rd/helper'
 
-RAILS_DEFAULT_LOGGER.info 'Starting RD formatter for RedMine'
+Rails.logger.info 'Starting RD formatter for RedMine'
 
 Redmine::Plugin.register :redmine_rd_formatter do
   name 'RD formatter'
@@ -15,5 +17,5 @@ Redmine::Plugin.register :redmine_rd_formatter do
     'rd_formatter_require_block' => true
   }, :partial => 'settings/rd_formatter_settings'
 
-  wiki_format_provider 'RD', RedmineRDFormatter::WikiFormatter, RedmineRDFormatter::Helper
+  wiki_format_provider 'RD', Redmine::WikiFormatting::RD::Formatter, Redmine::WikiFormatting::RD::Helper
 end
