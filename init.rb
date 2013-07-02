@@ -1,4 +1,3 @@
-# Redmine RD formatter
 require 'redmine'
 require 'wiki_formatting/rd/formatter'
 require 'wiki_formatting/rd/helper'
