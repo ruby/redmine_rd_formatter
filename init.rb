@@ -2,8 +2,6 @@ require 'redmine'
 require 'wiki_formatting/rd/formatter'
 require 'wiki_formatting/rd/helper'
 
-Rails.logger.info 'Starting RD formatter for RedMine'
-
 Redmine::Plugin.register :redmine_rd_formatter do
   name 'RD formatter'
   author 'Yuki Sonoda (Yugui)'
