@@ -1,6 +1,14 @@
-# RedmineRdFormatter
+# Redmine RD Formatter
 
-TODO: Write a gem description
+This is a redmine plugin for supporting RD as a wiki format.
+
+## What is RD?
+
+RD(Ruby Document Format) is Ruby's POD.
+
+It is a lightweight markup language, which was commonly used in Ruby-related documents. Some of experienced Ruby programmers still love it.
+
+See [the article on Wikipedia](http://en.wikipedia.org/wiki/Ruby_Document_format) for more details.
 
 ## Installation
 
