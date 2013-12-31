@@ -1,6 +1,6 @@
 require 'redmine'
-require 'wiki_formatting/rd/formatter'
-require 'wiki_formatting/rd/helper'
+require 'redmine/wiki_formatting/rd/formatter'
+require 'redmine/wiki_formatting/rd/helper'
 
 Redmine::Plugin.register :redmine_rd_formatter do
   name 'RD formatter'

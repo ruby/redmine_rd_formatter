@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'redmine_rd_formatter/version'
+require 'redmine/wiki_formatting/rd/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "redmine_rd_formatter"
-  spec.version       = RedmineRdFormatter::VERSION
+  spec.version       = Redmine::WikiFormatting::RD::VERSION
   spec.authors       = ["SHIBATA Hiroshi"]
   spec.email         = ["shibata.hiroshi@gmail.com"]
   spec.description   = %q{}
